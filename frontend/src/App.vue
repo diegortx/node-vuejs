@@ -1,19 +1,11 @@
 <template>
   <div id="app">
-    <h1>My Single Page Application</h1>
-    <User />
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import User from './components/User.vue';
 
-export default {
-  name: 'App',
-  components: {
-    User
-  }
-};
 </script>
 
 <style>

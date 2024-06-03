@@ -12,26 +12,23 @@
     </div>
 </template>
 
-<script>
+<script setup>
+import { ref, onMounted } from 'vue';
 import axios from 'axios';
 
-export default {
-    name: 'User',
-    data() {
-        return {
-            user: null
-        };
-    },
-    created() {
-        axios.get('/api/users/1')
-            .then(response => {
-                this.user = response.data;
-            })
-            .catch(error => {
-                console.error('There was an error fetching the user!', error);
-            });
-    }
-};
+const user = ref(null);
+
+onMounted(() => {
+    axios.get('/api/users/1')
+        .then(response => {
+            user.value = response.data;
+        })
+        .catch(error => {
+            console.error('There was an error fetching the user!', error);
+        });
+});
 </script>
 
-<style scoped></style>
+<style scoped>
+/* Add any styles specific to the User component here */
+</style>

@@ -1,6 +1,8 @@
 @import "./base.css";
 
 body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
   font-family: "Roboto", sans-serif;
   line-height: 1.6;
 }

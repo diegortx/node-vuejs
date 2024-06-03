@@ -1,6 +1,13 @@
 /* color palette from <https://github.com/vuejs/theme> */
 :root {
-  --bg-c-white: #ffffff;
+  --bg-color: #f5f5f5;
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --accent-color: #e74c3c;
+  --text-color: #333333;
+  --muted-text-color: #7f8c8d;
+  --border-color: #dcdcdc;
+  --completed-task-color: #95a5a6;
 }
 
 /* reset.css */
